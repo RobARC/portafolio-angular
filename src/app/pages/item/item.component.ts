@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ProductosService } from '../../services/productos.service';
 import { ProductoDescripcion } from '../../interfaces/producto-descripcion.interface';
 import { Producto } from '../../interfaces/productos.interface';
+import { formatDate } from '@angular/common';
 
 @Component({
   selector: 'app-item',
@@ -13,6 +14,7 @@ export class ItemComponent {
 
   producto: any;
   id!: string;
+  currentDate = formatDate(new Date(), 'dd-MM-yyyy', 'en-US');
 
   constructor(private route: ActivatedRoute,
               private productoService: ProductosService)

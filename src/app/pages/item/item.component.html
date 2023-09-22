@@ -1,7 +1,6 @@
 <section *ngIf="producto">
-    <header [ngStyle]="{ 'background-image': 'url(assets/productos/'+ id +'/main.jpg)' }"
-
-    class="rk-portfolio-cover  item-inside-1">
+    <header class="rk-portfolio-cover  item-inside-1">
+    <img src="../../../assets/productos/{{ id }}/main.jpg" alt="img main"/>
 
       <div class="item-inside__meta">
         <h1 class="ae-u-bolder rk-portfolio-title ">{{producto.producto}}</h1>
@@ -16,7 +15,7 @@
         <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right rk-portfolio-details">
           <p class="rk-portfolio-inner-client "><span class="ae-lambda">Client: </span><span class="ae-u-bolder">Agency Design Studio</span></p>
           <p class="au-underline rk-portfolio-inner-website "><a href="#0" class="ae-kappa">www.agencydesign.com</a></p>
-          <p class="ae-kappa ae-u-bold rk-portfolio-inner-date ">12 August, 2015</p>
+          <p class="ae-kappa ae-u-bold rk-portfolio-inner-date ">{{currentDate}}</p>
         </div>
       </div>
     </div>

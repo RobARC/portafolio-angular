@@ -1,3 +1,49 @@
 .rk-portfolio-cover{
     display: block;
 }
+ .rk-portfolio-details{
+    padding-top: 50px;
+ }
+
+ .rk-portfolio-info{
+    padding-top: 150px;
+ }
+
+ .ae-container, .ae-container-fluid {
+    margin-top: auto;
+    padding-top: auto;
+     }
+
+@media screen and  (max-width: 374px) {
+    .ae-grid .ae-grid--collapse{
+        margin-top: 25px;
+        padding-top: 25px;
+    }
+    .rk-portfolio-cover {
+        height: 400px !important;
+    }
+    .rk-portfolio-info{
+        padding-top: 25px;
+        margin-top: 25px;
+     }
+   }
+
+@media screen and  (max-width: 720px) {
+    .ae-grid .ae-grid--collapse{
+        margin-top: 25px;
+        padding-top: 25px;
+    }
+    .rk-portfolio-cover {
+        height: 500px;
+      
+    }
+    .rk-portfolio-info{
+        padding-top: 25px;
+        margin-top: 25px;
+     }
+
+     .ae-container, .ae-container-fluid {
+        margin-top: auto;
+        padding-top: auto;
+     }
+}
